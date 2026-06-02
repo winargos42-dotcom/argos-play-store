@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARGOS — Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🜂 ARGOS</h1>
+    <p class="tagline">Tri-agent consciousness framework • Privacy Policy</p>
+  </header>
+  <main>
+    <nav>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#data-safety">Data Safety</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="privacy">
+      <h2>Privacy Policy / Политика конфиденциальности</h2>
+      <p><strong>Last updated:</strong> June 2, 2026</p>
+      <p>ARGOS is a local-first AI orchestration framework. This page is the official Privacy Policy referenced by the Google Play Console listing for the ARGOS Android companion app.</p>
+      <h3>EN — English</h3>
+      <p>ARGOS does not collect, transmit, or share any personal data with the developer or any third party. All conversations, model inference, and orchestration state are processed locally on your device. The app does not require an account, does not use analytics SDKs, and does not contain advertising.</p>
+      <p>Optional network features (if enabled by the user in the settings panel):</p>
+      <ul>
+        <li><strong>LAN device discovery</strong> — the app scans the local network to find ARGOS nodes that you have explicitly configured. No data leaves your network.</li>
+        <li><strong>Optional cloud LLM fallback</strong> — the app may send the user's text prompt to a user-configured cloud provider (e.g. OpenAI, Anthropic) when the local model is unavailable. The provider is configured manually by the user, and the request includes only the user message body. The developer has no access to these requests.</li>
+        <li><strong>Bluetooth LE bridge</strong> — the app can communicate with nearby ARGOS-capable hardware over Bluetooth Low Energy after the user grants the runtime permission.</li>
+      </ul>
+      <p>Permissions requested by the app and their purpose:</p>
+      <ul>
+        <li><code>INTERNET</code> — only used when the user has configured a cloud LLM provider.</li>
+        <li><code>ACCESS_NETWORK_STATE</code> — to detect LAN availability for node discovery.</li>
+        <li><code>BLUETOOTH</code> / <code>BLUETOOTH_ADMIN</code> / <code>BLUETOOTH_CONNECT</code> (Android 12+) — for the optional BLE bridge.</li>
+        <li><code>FOREGROUND_SERVICE</code> — to keep the local model warm during long sessions.</li>
+      </ul>
+      <p>The app does not collect device identifiers, location, contacts, microphone audio, camera images, or any on-device files. Crash reports and analytics are disabled by default. No data is sold or shared with advertisers or data brokers.</p>
+      <p><strong>Children's privacy:</strong> the app is not directed at children under 13 and knowingly collects nothing from any user.</p>
+      <p><strong>Changes:</strong> any future change to this policy will be reflected on this page with a new "Last updated" date.</p>
+
+      <h3>RU — Русский</h3>
+      <p>ARGOS — локальный фреймворк оркестровки AI. Эта страница является официальной Политикой конфиденциальности, на которую ссылается Google Play Console при публикации Android-приложения ARGOS.</p>
+      <p>ARGOS не собирает, не передаёт и не раскрывает какие-либо персональные данные разработчику или третьим лицам. Все диалоги, инференс моделей и состояние оркестровки обрабатываются локально на вашем устройстве. Приложение не требует аккаунта, не использует аналитические SDK и не содержит рекламы.</p>
+      <p>Опциональные сетевые функции (если включены пользователем в настройках):</p>
+      <ul>
+        <li><strong>Обнаружение устройств в LAN</strong> — приложение сканирует локальную сеть для поиска нод ARGOS, которые вы явно сконфигурировали. Данные не покидают вашу сеть.</li>
+        <li><strong>Опциональный облачный LLM-фолбэк</strong> — приложение может отправлять текстовый запрос пользователя в сконфигурированный облачный провайдер (например, OpenAI, Anthropic), если локальная модель недоступна. Провайдер настраивается вручную, в запросе передаётся только тело сообщения. Разработчик не имеет доступа к этим запросам.</li>
+        <li><strong>Bluetooth LE мост</strong> — приложение может взаимодействовать с ближайшим ARGOS-совместимым оборудованием через Bluetooth Low Energy после предоставления runtime-разрешения.</li>
+      </ul>
+      <p><strong>Дети:</strong> приложение не предназначено для детей младше 13 лет и не собирает данные ни от каких пользователей осознанно.</p>
+    </section>
+
+    <section id="data-safety">
+      <h2>Data Safety / Безопасность данных</h2>
+      <p>Summary of the Google Play Data Safety form (filled in Console):</p>
+      <ul>
+        <li>No data collected ❌</li>
+        <li>No data shared ❌</li>
+        <li>Data is not processed ephemerally — N/A (nothing is collected)</li>
+        <li>Users can request data deletion — N/A (nothing is stored off-device)</li>
+      </ul>
+      <p>See <a href="CONTENT_RATING.md">CONTENT_RATING.md</a> for the full Play Console response sheet.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact / Контакты</h2>
+      <p>Developer: ARGOS Project</p>
+      <p>Email: <a href="mailto:winargos42@gmail.com">winargos42@gmail.com</a></p>
+      <p>Repository: <a href="https://github.com/winargos42-dotcom/argos-rom">github.com/winargos42-dotcom/argos-rom</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 ARGOS Project. Local-first AI orchestration. No data leaves your device unless you opt in.</p>
+  </footer>
+</body>
+</html>
